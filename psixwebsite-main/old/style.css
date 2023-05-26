@@ -1,0 +1,108 @@
+@import url("//fonts.googleapis.com/css?family=Roboto:500");
+/*@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");*/
+body {
+  padding: 64px 0;
+  text-align: center;
+  background-color: #494d5f;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3d404f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #454957;
+}
+
+.active {
+  background-color: #a0d2eb;
+}
+.face-button {
+  height: 64px;
+  display: inline-block;
+  border: 3px solid #a0d2eb;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: #a0d2eb;
+  overflow: hidden;
+}
+.face-button .icon {
+  margin-right: 6px;
+}
+.face-button .face-primary,
+.face-button .face-secondary {
+  display: block;
+  padding: 0 32px;
+  line-height: 64px;
+  transition: margin 0.4s;
+  background-color: #3d404f;
+}
+.face-button .face-primary {
+  background-color: #a0d2eb;
+  color: #fff;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link {
+  background:
+    linear-gradient(
+      to right,
+      #a0d2eb,
+      #a0d2eb
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.link:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+hr {
+  width:50%;
+  margin:0 auto;
+  background-color: #51566b;
+  border-top: 1px solid #51566b;
+  color: #51566b;
+}
